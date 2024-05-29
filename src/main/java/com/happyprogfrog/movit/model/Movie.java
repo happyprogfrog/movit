@@ -1,9 +1,7 @@
 package com.happyprogfrog.movit.model;
 
 import jakarta.persistence.*;
-import lombok.EqualsAndHashCode;
 import lombok.Getter;
-import lombok.ToString;
 
 @Entity
 @Getter
@@ -11,7 +9,7 @@ public class Movie extends TimeBaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "movie_id", updatable = false)
+    @Column(name = "movie_id")
     private Long id;
 
     @Column(nullable = false)
